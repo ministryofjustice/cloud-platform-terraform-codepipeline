@@ -12,7 +12,6 @@ module "example_codepipeline" {
   cluster_state_bucket = "cloud-platform-terraform-state"
   kops_state_store = "s3://cloud-platform-kops-state"
   branch = "pipeline"
-  github_token = ${GITHUB_TOKEN}
   project = "cloud-platform-imran-test"
   app = "demo"
   image = "ministryofjustice/cloud-platform-tools:1.15"
