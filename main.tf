@@ -40,14 +40,13 @@ resource "aws_codepipeline" "project" {
       owner            = "ThirdParty"
       provider         = "GitHub"
       version          = "1"
-      output_artifacts = ["${var.app}"]
+      output_artifacts = [var.app]
 
       configuration = {
         Owner                = var.github_org
         Repo                 = var.project
         PollForSourceChanges = "true"
         Branch               = var.branch
-        OAuthToken           = var.github_token
       }
     }
   }

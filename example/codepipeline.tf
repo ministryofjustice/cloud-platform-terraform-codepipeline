@@ -7,7 +7,7 @@
 module "example_codepipeline" {
   #source = "github.com/ministryofjustice/cloud-platform-terraform-codepipeline?ref=v1.0"
   source = "../"
-  artifact_store = "cloud-platform-75a32f02f75ca295a03251328669dc68"
+  artifact_store = "cloud-platform-491790a26ee9d2082cd2c58d90b180da"
   cluster_name = "jb-test-2"
   cluster_state_bucket = "cloud-platform-terraform-state"
   kops_state_store = "s3://cloud-platform-kops-state"
