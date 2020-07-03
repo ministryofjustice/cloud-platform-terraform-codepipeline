@@ -5,17 +5,18 @@
  *
  */
 module "example_codepipeline" {
-  #source = "github.com/ministryofjustice/cloud-platform-terraform-codepipeline?ref=v1.0"
-  source = "../"
-  artifact_store = "cloud-platform-491790a26ee9d2082cd2c58d90b180da"
-  cluster_name = "jb-test-2"
-  cluster_state_bucket = "cloud-platform-terraform-state"
-  kops_state_store = "s3://cloud-platform-kops-state"
-  branch = "pipeline"
-  project = "cloud-platform-imran-test"
-  app = "demo"
-  image = "ministryofjustice/cloud-platform-tools:1.15"
-  spec_location = "build/buildspec.yml"
+  source = "github.com/ministryofjustice/cloud-platform-terraform-codepipeline?ref=v1.0"
+  artifact_store = "<S3_BUCKET_NAME>"
+  cluster_name = "<CLUSTER_NAME>"
+  cluster_state_bucket = "<CLUSTER_STATE_BUCKET>"
+  kops_state_store = "<KOPS_STATE_STORE>"
+  branch = "<BRANCH>"
+  project = "<GITHUB_REPO_NAME>"
+  app = "<APP_NAME>"
+  image = "<DOCKER_IMAGE>"
+  spec_location = "<BUILD_SPEC_LOCATION>"
+  github_token = "<GITHUB_TOKEN>"
+  compute_type = "BUILD_GENERAL1_SMALL"
 
   providers = {
     # Can be either "aws.london" or "aws.ireland"

@@ -6,7 +6,7 @@ resource "aws_codebuild_project" "project" {
   service_role  = aws_iam_role.codebuild_role.arn
 
   environment {
-    compute_type                = "BUILD_GENERAL1_SMALL"
+    compute_type                = var.compute_type
     image                       = var.image
     type                        = "LINUX_CONTAINER"
     image_pull_credentials_type = "CODEBUILD"
@@ -47,6 +47,7 @@ resource "aws_codepipeline" "project" {
         Repo                 = var.project
         PollForSourceChanges = "true"
         Branch               = var.branch
+        OAuthToken           = var.github_token
       }
     }
   }

@@ -11,3 +11,5 @@ variable "branch" {}
 variable "project" {}
 variable "spec_location" {}
 variable "app" {}
+variable "github_token" {}
+variable "compute_type" {}
