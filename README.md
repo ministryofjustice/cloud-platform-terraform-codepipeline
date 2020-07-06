@@ -1,4 +1,4 @@
-Terraform AWS CodeBuild / CodePipeline - [Firebreak Ticket:](https://github.com/ministryofjustice/cloud-platform/issues/1996) For POC / Investigation only)
+Terraform AWS CodeBuild / CodePipeline - [Firebreak Ticket:](https://github.com/ministryofjustice/cloud-platform/issues/1996) For POC / Investigation only
 
 ==========
 
