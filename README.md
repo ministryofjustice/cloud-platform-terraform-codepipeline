@@ -1,4 +1,6 @@
-Terraform AWS CodeBuild / CodePipeline
+Terraform AWS CodeBuild / CodePipeline (Firebreak Ticket: For POC / Investigation only)
+
+Issue URL: https://github.com/ministryofjustice/cloud-platform/issues/1996
 ==========
 
 Configuration in this directory creates a set of CodePipeline / CodeBuild resources.
@@ -31,7 +33,7 @@ Source:
 * Provider - As the name implies the 'Source' stage defines the source of the build, which is defined by the 'provider' parameter. 
            For example if the provider is GitHub then the source is a GitHub repository. As well as GitHub there are a number of other 'providers' that AWS supports as well such as ECR and S3. For more on AWS source providers visit: https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html
 
-* Configuration - The 'configuration' section are the arguments that define and validate the 'provider' and so they will vary depending on upon what type of 'provider' is
+* Configuration - The 'configuration' section are the arguments that define and validate the 'provider' and so they will vary depending upon what type of 'provider' is
                   specified. For example if 'GitHub' is chosen as the provider then the configuration will be as follows:
 
                   ```hcl
