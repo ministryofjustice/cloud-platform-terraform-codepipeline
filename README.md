@@ -1,6 +1,5 @@
-Terraform AWS CodeBuild / CodePipeline (Firebreak Ticket: For POC / Investigation only)
+Terraform AWS CodeBuild / CodePipeline - [Firebreak Ticket:](https://github.com/ministryofjustice/cloud-platform/issues/1996) For POC / Investigation only)
 
-Issue URL: https://github.com/ministryofjustice/cloud-platform/issues/1996
 ==========
 
 Configuration in this directory creates a set of CodePipeline / CodeBuild resources.
